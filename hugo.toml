@@ -1,0 +1,67 @@
+baseURL = "https://ai-engineering.space/"
+theme = "risotto"
+title = "AI Engineering — ИИ в управлении производством"
+copyright = "© AI Engineering"
+languageCode = "ru"
+DefaultContentLanguage = "ru"
+enableInlineShortcodes = true
+
+[pagination]
+pagerSize = 5
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "tokyo-night-dark"
+
+# Sidebar: about/bio
+[params.about]
+title = "AI Engineering"
+description = "Внедряем искусственный интеллект в управление производством."
+logo = "⚙️"
+
+# Sidebar: social links
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/project-engineering-ai"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:info@ai-engineering.space"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "О компании"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "solutions"
+    name = "Решения"
+    url = "/solutions/"
+    weight = 20
+  [[menu.main]]
+    identifier = "post"
+    name = "Блог"
+    url = "/post/"
+    weight = 30
+  [[menu.main]]
+    identifier = "contact"
+    name = "Контакты"
+    url = "/contact/"
+    weight = 40
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+ordered = true
