@@ -1,0 +1,79 @@
+# Alert/Admonition translations
+note = "Примечание"
+tip = "Совет"
+important = "Важно"
+warning = "Предупреждение"
+caution = "Осторожно"
+info = "Информация"
+success = "Успех"
+question = "Вопрос"
+danger = "Опасно"
+bug = "Ошибка"
+example = "Пример"
+
+# Header & navigation
+menu = "Меню"
+search = "Поиск"
+searchPlaceholder = "Поиск..."
+clearSearch = "Очистить поиск"
+closeSearch = "Закрыть поиск"
+toggleMenu = "Открыть меню"
+closeMenu = "Закрыть меню"
+toggleTheme = "Переключить тему"
+language = "Язык"
+
+# Accessibility
+skipToMain = "Перейти к содержимому"
+scrollToTop = "Наверх"
+
+# Home
+home = "Главная"
+recentPosts = "Свежие записи"
+
+# List & filters
+posts = "Записи"
+filters = "Фильтры"
+searchTags = "Поиск по тегам..."
+tagsLabel = "Теги"
+yearMonth = "Год и месяц"
+allDates = "Все даты"
+clearFilters = "Сбросить фильтры"
+
+# Pagination
+pageOf = "Страница %s из %s"
+postSingular = "запись"
+postPlural = "записей"
+pageSingular = "страница"
+pagePlural = "страниц"
+postsOnThisPage = "на этой странице"
+paginationFirst = "Первая"
+paginationPrev = "Назад"
+paginationNext = "Вперёд"
+paginationLast = "Последняя"
+
+# Navigation links
+backToHome = "На главную"
+allTags = "Все теги"
+readMore = "Читать дальше"
+
+# Archive
+archive = "Архив"
+
+# Single post
+relatedPosts = "Похожие записи"
+tags = "Теги"
+navPrev = "Предыдущая"
+navNext = "Следующая"
+
+# Post meta
+wordCount = "слов"
+readingTime = "мин"
+
+# Table of contents
+tableOfContents = "Содержание"
+toggleToc = "Показать/скрыть содержание"
+
+# Tags page
+tagsHelp = "Нажмите на тег, чтобы увидеть связанные записи"
+searchNoResults = "Ничего не найдено"
+searchNoTagsFound = "Теги не найдены"

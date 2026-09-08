@@ -1,4 +1,4 @@
-# Build the Hugo site (risotto theme) and deploy to GitHub Pages.
+# Build the Hugo site (mana theme) and deploy to GitHub Pages.
 
 name: Deploy Hugo site to Pages
 

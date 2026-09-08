@@ -1,36 +1,78 @@
 baseURL = "https://ai-engineering.space/"
-theme = "risotto"
+theme = "mana"
 title = "AI Engineering — ИИ в управлении производством"
 copyright = "© AI Engineering"
 languageCode = "ru"
 DefaultContentLanguage = "ru"
 enableInlineShortcodes = true
 
+# Пагинация списка постов
 [pagination]
-pagerSize = 5
+pageSize = 10
+
+# Форматы вывода: JSON на главной нужен для полнотекстового поиска темы
+[outputs]
+home = ["HTML", "JSON"]
+
+[sitemap]
+changefreq = "weekly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[markup]
+  # Оглавление в постах
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      # Блочные атрибуты — нужны для алертов/адмонишнов темы (> [!NOTE] и т.п.)
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+  # Подсветка кода (Catppuccin)
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    style = "catppuccin-macchiato"
 
 [params]
 noindex = false
-
-[params.theme]
-palette = "tokyo-night-dark"
-
-# Sidebar: about/bio
-[params.about]
-title = "AI Engineering"
 description = "Внедряем искусственный интеллект в управление производством."
-logo = "⚙️"
+author = "AI Engineering"
+heroTitleLine1 = "AI ENGINEERING"
+heroTitleLine2 = "ИИ в управлении производством"
+footerText = "AI Engineering — ИИ в управлении производством"
+favicon = "/favicon.png"
+relatedPostsCount = 3
 
-# Sidebar: social links
-[[params.socialLinks]]
-icon = "fa-brands fa-github"
-title = "GitHub"
-url = "https://github.com/project-engineering-ai"
+  # Аватар: минимальный логотип (assets/images/logo.png)
+  [params.avatar]
+  assetPath = "images/logo.png"
+  enableResize = true
 
-[[params.socialLinks]]
-icon = "fa-solid fa-envelope"
-title = "Email"
-url = "mailto:info@ai-engineering.space"
+  [params.social]
+  github = "https://github.com/project-engineering-ai"
+  email = "info@ai-engineering.space"
+
+  [params.codeHighlight]
+  darkTheme = "catppuccin-macchiato"
+  lightTheme = "catppuccin-frappe"
+
+  [params.copyright]
+  startYear = 2026
+  owner = "AI Engineering"
+
+  [params.admonitions]
+  alertStyle = "favicon"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
 
 [menu]
   [[menu.main]]
@@ -53,15 +95,3 @@ url = "mailto:info@ai-engineering.space"
     name = "Контакты"
     url = "/contact/"
     weight = 40
-
-[taxonomies]
-category = "categories"
-tag = "tags"
-
-[markup.goldmark.renderer]
-unsafe = true
-
-[markup.tableOfContents]
-startLevel = 2
-endLevel = 3
-ordered = true
