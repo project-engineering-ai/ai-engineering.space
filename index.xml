@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI Engineering</title><link>https://ai-engineering.space/</link><description>Recent content on AI Engineering</description><generator>Hugo</generator><language>ru</language><lastBuildDate>Thu, 10 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ai-engineering.space/index.xml" rel="self" type="application/rss+xml"/><item><title>Как мы готовим документы для LLM</title><link>https://ai-engineering.space/blog/kak-my-gotovim-dokumenty-dlya-llm/</link><pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate><guid>https://ai-engineering.space/blog/kak-my-gotovim-dokumenty-dlya-llm/</guid><description>&lt;p>Качество языковой модели начинается задолго до первого промпта — с того, как подготовлены документы, на которых она работает. Вот основные шаги нашего процесса.&lt;/p></description></item><item><title>Почему RAG не работает: типичные проблемы данных</title><link>https://ai-engineering.space/blog/pochemu-rag-ne-rabotaet/</link><pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate><guid>https://ai-engineering.space/blog/pochemu-rag-ne-rabotaet/</guid><description>&lt;p>Когда RAG-система отвечает невпопад, причина почти всегда не в модели, а в данных. Вот четыре проблемы, которые мы встречаем чаще всего.&lt;/p></description></item><item><title>Контакты</title><link>https://ai-engineering.space/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ai-engineering.space/contact/</guid><description>&lt;p>Пишите на почту: &lt;strong>&lt;a href="mailto:info@ai-engineering.space">info@ai-engineering.space&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>Или заполните форму ниже — ответим в рабочее время.&lt;/p>
+&lt;form name="contact" action="https://getform.io/" method="POST" class="flex flex-col gap-4">
+ &lt;div class="input">
+ &lt;input type="text" placeholder="Name" name="name" class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required>
+ &lt;/div>
+ &lt;div class="input">
+ &lt;input type="text" placeholder="E-Mail" name="mail" class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required>
+ &lt;/div>
+ &lt;div class="input">
+ &lt;input type="text" placeholder="Title" name="title" class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required>
+ &lt;/div>
+ &lt;div class="input">
+ &lt;textarea rows="5" cols="30" placeholder="Message" name="message" class="w-full p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500" required>&lt;/textarea>
+ &lt;/div>
+ &lt;input type="submit" value="Submit" class="px-8 py-2 duration-200 bg-gray-800 text-white cursor-pointer transition-colors hover:bg-gray-400">
+&lt;/form></description></item><item><title>О компании</title><link>https://ai-engineering.space/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ai-engineering.space/about/</guid><description>&lt;p>&lt;strong>AI Engineering&lt;/strong> — инженерная компания в сфере искусственного интеллекта. Наша специализация — подготовка документов и данных для языковых моделей.&lt;/p>
+&lt;p>Мы верим, что качество модели во многом определяется качеством данных, на которых она работает. Поэтому мы занимаемся тем, что обычно остаётся за кадром: корпусами текстов, датасетами, структурированием документации под RAG и инференс, подготовкой данных для fine-tuning и контролем качества данных.&lt;/p>
+&lt;h2 id="наши-принципы">Наши принципы&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Данные важнее промптов.&lt;/strong> Хорошо подготовленный корпус решает больше, чем ещё одна итерация промптинга.&lt;/li>
+&lt;li>&lt;strong>Структура решает.&lt;/strong> Даже идеальный текст, плохо структурированный под RAG, работает против модели.&lt;/li>
+&lt;li>&lt;strong>Качество измеримо.&lt;/strong> Дедупликация, метрики, аудит — мы не готовим данные «на глаз».&lt;/li>
+&lt;/ul>
+&lt;p>Мы работаем с командами, которые строят продукты на базе LLM: от первого прототипа до промышленного пайплайна.&lt;/p></description></item><item><title>Услуги</title><link>https://ai-engineering.space/services/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ai-engineering.space/services/</guid><description>&lt;p>&lt;strong>AI Engineering&lt;/strong> работает на стыке искусственного интеллекта и инженерии данных. Мы готовим документы и датасеты так, чтобы языковые модели работали с ними точно и предсказуемо.&lt;/p>
+&lt;h2 id="что-мы-делаем">Что мы делаем&lt;/h2>
+&lt;h3 id="корпуса-и-датасеты">Корпуса и датасеты&lt;/h3>
+&lt;p>Собираем текстовые корпуса под вашу предметную область, чистим их от мусора и дубликатов, приводим к единому формату и размечаем под задачи обучения.&lt;/p>
+&lt;h3 id="документы-под-rag">Документы под RAG&lt;/h3>
+&lt;p>Структурируем документацию для retrieval-augmented generation: продуманный чанкинг, полезные метаданные, контроль качества извлечения. В итоге модель находит и цитирует нужные фрагменты, а не угадывает.&lt;/p></description></item></channel></rss>
