@@ -17,7 +17,6 @@ import { NavItems } from 'types';
 
 const navItems: NavItems = [
   { title: 'Услуги', href: '/features' },
-  { title: 'Форматы работы', href: '/pricing' },
   { title: 'Блог', href: '/blog' },
   { title: 'Обсудить проект', href: '/contact', outlined: true },
 ];

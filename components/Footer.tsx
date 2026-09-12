@@ -13,7 +13,6 @@ const footerItems: FooterItems = [
     title: 'Компания',
     items: [
       { title: 'Услуги', href: '/features' },
-      { title: 'Форматы работы', href: '/pricing' },
     ],
   },
   {
