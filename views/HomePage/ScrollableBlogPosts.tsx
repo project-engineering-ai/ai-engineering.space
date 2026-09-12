@@ -30,7 +30,7 @@ export default function ScrollableBlogPosts({ posts }: ScrollableBlogPostsProps)
       <Container>
         <Content>
           <OverTitle>блог</OverTitle>
-          <SectionTitle>Пишем про данные и безопасность для LLM</SectionTitle>
+          <SectionTitle>Пишем про данные для LLM — RAG, корпуса, качество</SectionTitle>
         </Content>
       </Container>
 

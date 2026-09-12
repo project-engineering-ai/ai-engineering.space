@@ -8,7 +8,7 @@ import { getAllPosts } from 'utils/postsFetcher';
 
 export default function BlogIndexPage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Page title="Блог" description="Практика подготовки данных для LLM, RAG и безопасности ИИ-решений.">
+    <Page title="Блог" description="Практика подготовки данных для LLM: RAG, корпуса, качество данных.">
       <CustomAutofitGrid>
         {posts.map((singlePost, idx) => (
           <ArticleCard

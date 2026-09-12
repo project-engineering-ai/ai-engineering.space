@@ -11,11 +11,11 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>внедрение ии · безопасность решений</CustomOverTitle>
-        <Heading>Внедряем ИИ в бизнес — безопасно</Heading>
+        <CustomOverTitle>данные для языковых моделей</CustomOverTitle>
+        <Heading>Качество модели начинается с данных</Heading>
         <Description>
-          Проектируем, разворачиваем и защищаем решения на основе языковых моделей: RAG-ассистенты, автоматизация процессов, аналитика
-          документов. Модель угроз, изоляция данных и защита от LLM-атак — с первого дня проекта, а не «потом».
+          Мы — команда инженеров данных. Готовим документы и данные, на которых работают языковые модели: корпуса, датасеты,
+          структурирование под RAG и fine-tuning.
         </Description>
         <CustomButtonGroup>
           <NextLink href="/contact" passHref>
