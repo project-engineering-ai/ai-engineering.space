@@ -1,5 +1,5 @@
-#### Contact
+По вопросам подготовки данных и документов для LLM:
 
-- Email: ai-engineering[at]project-a.org
-- Гитхаб: [project-engineering-ai/ai-engineering.space](https://github.com/project-engineering-ai/ai-engineering.space)
-- Сайт: https://ai-engineering.space
+**Email:** [info@ai-engineering.space](mailto:info@ai-engineering.space)
+
+Отвечаем в рабочее время.

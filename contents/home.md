@@ -1,7 +1,11 @@
-[![AI Engineering](https://img.shields.io/badge/AI%20Engineering-github-blue?logo=github)](https://github.com/project-engineering-ai/ai-engineering.space)
+**AI Engineering** — команда инженеров данных. Мы готовим документы и данные, на которых работают языковые модели: корпуса, датасеты, структурирование под RAG и fine-tuning.
 
-Проект про инженерный искусственный интеллект: ML, робототехника, автономные системы.
+Качество языковой модели начинается задолго до первого промпта — с того, как подготовлены документы, на которых она работает.
 
-#### Contact
+#### Контакт
 
-Email: ai-engineering[at]project-a.org
+Email: info@ai-engineering.space
+
+#### Чем занимаемся
+
+Корпуса и датасеты, документы под RAG, подготовка под fine-tuning, контроль качества данных.
