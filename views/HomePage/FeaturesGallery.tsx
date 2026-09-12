@@ -12,7 +12,7 @@ const TABS = [
     title: 'Корпуса и датасеты',
     description:
       '<p>Собираем текстовые корпуса из ваших источников и открытых данных, чистим от дублей и мусора, размечаем под задачу. На выходе — датасет, готовый к использованию.</p>',
-    imageUrl: '/demo-illustration-3.png',
+    imageUrl: '/posts/datasets.svg',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
@@ -20,7 +20,7 @@ const TABS = [
     title: 'Документы под RAG',
     description:
       '<p>Структурируем документацию для retrieval-augmented generation: осмысленный чанкинг, метаданные, проверка того, что нужные фрагменты реально находятся по типовым запросам.</p>',
-    imageUrl: '/demo-illustration-4.png',
+    imageUrl: '/posts/rag-flow.svg',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
@@ -28,7 +28,7 @@ const TABS = [
     title: 'Данные под fine-tuning',
     description:
       '<p>Готовим инструкционные и доменные датасеты для дообучения: форматы, шаблоны, валидация примеров, разбиение train/val/test без утечек.</p>',
-    imageUrl: '/demo-illustration-5.png',
+    imageUrl: '/posts/finetuning.svg',
     baseColor: '88,193,132',
     secondColor: '124,207,158',
   },
