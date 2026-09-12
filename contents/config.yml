@@ -1,0 +1,26 @@
+title: AI Engineering
+page-top-title: AI Engineering
+top-section-bg-text: Machine Learning and Information Security
+backgrounds:
+  - static/assets/background/background_0.jpeg
+  - static/assets/background/background_1.jpeg
+background-interval-ms: 7000
+background-overlay: 0.52
+copyright-text: '&copy; AI Engineering 2026. All Rights Reserved.'
+github-link:
+  text: GitHub
+  href: https://github.com/project-engineering-ai/ai-engineering.space
+license-link:
+  text: License
+  href: https://github.com/project-engineering-ai/ai-engineering.space/blob/main/LICENSE
+sections:
+  - id: home
+    nav: HOME
+    title: AI Engineering
+    href: '#page-top'
+  - id: about
+    nav: ABOUT
+    title: ABOUT
+  - id: contact
+    nav: CONTACT
+    title: CONTACT
