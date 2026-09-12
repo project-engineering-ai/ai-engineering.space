@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Poppins, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A121E"/>
+      <stop offset="1" stop-color="#12233A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5794E0"/>
+      <stop offset="1" stop-color="#58C184"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1080" cy="90" r="180" fill="#5794E0" opacity="0.07"/>
+  <circle cx="120" cy="600" r="220" fill="#58C184" opacity="0.07"/>
+
+  <!-- Stage 1: documents -->
+  <g transform="translate(120,240)">
+    <rect x="20" y="-14" width="120" height="160" rx="8" fill="#1B3050" stroke="#3A5A85" transform="rotate(-6)"/>
+    <rect x="0" y="0" width="120" height="160" rx="8" fill="#223A5E" stroke="#5794E0" stroke-width="2"/>
+    <rect x="16" y="22" width="70" height="8" rx="4" fill="#5794E0"/>
+    <rect x="16" y="44" width="88" height="6" rx="3" fill="#3A5A85"/>
+    <rect x="16" y="60" width="88" height="6" rx="3" fill="#3A5A85"/>
+    <rect x="16" y="76" width="60" height="6" rx="3" fill="#3A5A85"/>
+    <rect x="16" y="98" width="88" height="6" rx="3" fill="#3A5A85"/>
+  </g>
+  <text x="160" y="470" fill="#8FA9C9" font-size="20" text-anchor="middle">Документы</text>
+
+  <path d="M 300 320 H 380" stroke="url(#accent)" stroke-width="4" marker-end="url(#arr)"/>
+
+  <!-- Stage 2: clean -->
+  <g transform="translate(400,250)">
+    <rect width="160" height="140" rx="12" fill="#223A5E" stroke="#5794E0" stroke-width="2"/>
+    <path d="M 30 100 L 60 70 L 85 88 L 130 35" stroke="#58C184" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="130" cy="35" r="6" fill="#58C184"/>
+  </g>
+  <text x="480" y="470" fill="#8FA9C9" font-size="20" text-anchor="middle">Чистка</text>
+
+  <path d="M 600 320 H 680" stroke="url(#accent)" stroke-width="4" marker-end="url(#arr)"/>
+
+  <!-- Stage 3: chunks -->
+  <g transform="translate(700,240)">
+    <rect width="90" height="55" rx="6" fill="#223A5E" stroke="#5794E0"/>
+    <rect width="90" height="55" rx="6" fill="#223A5E" stroke="#5794E0" transform="translate(70,62)"/>
+    <rect width="90" height="55" rx="6" fill="#223A5E" stroke="#5794E0" transform="translate(0,124)"/>
+    <rect width="90" height="55" rx="6" fill="#223A5E" stroke="#5794E0" transform="translate(140,20)"/>
+    <rect width="90" height="55" rx="6" fill="#1B3050" stroke="#58C184" transform="translate(140,95)"/>
+  </g>
+  <text x="800" y="470" fill="#8FA9C9" font-size="20" text-anchor="middle">Чанки и метаданные</text>
+
+  <path d="M 990 320 H 1050" stroke="url(#accent)" stroke-width="4" marker-end="url(#arr)"/>
+
+  <!-- Stage 4: quality check -->
+  <g transform="translate(1010,230)">
+    <circle cx="80" cy="90" r="80" fill="none" stroke="#3A5A85" stroke-width="10"/>
+    <path d="M 80 10 A 80 80 0 1 1 12 52" fill="none" stroke="#58C184" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <text x="1090" y="470" fill="#8FA9C9" font-size="20" text-anchor="middle">Контроль качества</text>
+
+  <marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#5794E0"/>
+  </marker>
+</svg>

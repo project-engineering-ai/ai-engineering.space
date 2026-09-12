@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Poppins, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A121E"/>
+      <stop offset="1" stop-color="#231520"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg2)"/>
+  <circle cx="110" cy="100" r="170" fill="#F95278" opacity="0.08"/>
+  <circle cx="1100" cy="600" r="200" fill="#F95278" opacity="0.06"/>
+
+  <!-- healthy side -->
+  <g transform="translate(150,180)">
+    <text x="150" y="-40" fill="#8FA9C9" font-size="22" text-anchor="middle">Корректные данные</text>
+    <rect width="300" height="200" rx="12" fill="#223A5E" stroke="#5794E0" stroke-width="2"/>
+    <rect x="24" y="28" width="110" height="10" rx="5" fill="#5794E0"/>
+    <rect x="24" y="56" width="250" height="8" rx="4" fill="#3A5A85"/>
+    <rect x="24" y="74" width="250" height="8" rx="4" fill="#3A5A85"/>
+    <rect x="24" y="92" width="180" height="8" rx="4" fill="#3A5A85"/>
+    <rect x="24" y="120" width="110" height="10" rx="5" fill="#5794E0"/>
+    <rect x="24" y="148" width="250" height="8" rx="4" fill="#3A5A85"/>
+    <rect x="24" y="166" width="200" height="8" rx="4" fill="#3A5A85"/>
+    <circle cx="390" cy="100" r="34" fill="none" stroke="#58C184" stroke-width="4"/>
+    <path d="M 375 100 L 386 112 L 408 86" stroke="#58C184" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- broken side -->
+  <g transform="translate(660,150)">
+    <text x="200" y="-40" fill="#8FA9C9" font-size="22" text-anchor="middle">Сломанный чанкинг и дубли</text>
+    <!-- torn chunk: table split -->
+    <rect width="130" height="70" rx="6" fill="#2A1B26" stroke="#F95278" stroke-width="2"/>
+    <rect x="150" y="90" width="130" height="70" rx="6" fill="#2A1B26" stroke="#F95278" stroke-width="2"/>
+    <rect x="290" width="130" height="70" rx="6" fill="#2A1B26" stroke="#F95278" stroke-width="2"/>
+    <!-- duplicate chunks -->
+    <rect y="180" width="130" height="70" rx="6" fill="#2A1B26" stroke="#F95278" stroke-width="2" opacity="0.9"/>
+    <rect y="186" width="130" height="70" rx="6" fill="none" stroke="#F95278" stroke-width="1.5" transform="translate(8,-6)"/>
+    <rect y="180" width="130" height="70" rx="6" fill="#2A1B26" stroke="#F95278" stroke-width="2" transform="translate(160,0)" opacity="0.9"/>
+    <rect y="186" width="130" height="70" rx="6" fill="none" stroke="#F95278" stroke-width="1.5" transform="translate(168,-6)"/>
+    <!-- missing header -->
+    <rect x="290" y="180" width="130" height="70" rx="6" fill="#1B1523" stroke="#5A4155" stroke-dasharray="6 6"/>
+    <!-- disconnected dots: no metadata -->
+    <circle cx="380" cy="40" r="5" fill="#5A4155"/>
+    <circle cx="400" cy="60" r="5" fill="#5A4155"/>
+    <circle cx="418" cy="35" r="5" fill="#5A4155"/>
+    <text x="395" y="80" fill="#F95278" font-size="26" text-anchor="middle">?</text>
+  </g>
+
+  <!-- center: warning -->
+  <g transform="translate(600,560)">
+    <path d="M -26 22 L 0 -26 L 26 22 Z" fill="none" stroke="#F95278" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="0" y1="-8" x2="0" y2="6" stroke="#F95278" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="14" r="2.4" fill="#F95278"/>
+  </g>
+</svg>
