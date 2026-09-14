@@ -20,6 +20,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           name="description"
           content="Готовим документы и данные для языковых моделей: корпуса и датасеты, структурирование под RAG, подготовка под fine-tuning, контроль качества данных."
         />
+        <link rel="canonical" href={EnvVars.URL} />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>
