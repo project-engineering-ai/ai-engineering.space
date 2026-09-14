@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { EnvVars } from 'env';
@@ -12,6 +13,7 @@ export interface PageProps {
 }
 
 export default function Page({ title, description, children }: PropsWithChildren<PageProps>) {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -19,6 +21,8 @@ export default function Page({ title, description, children }: PropsWithChildren
           {title} | {EnvVars.SITE_NAME}
         </title>
         <meta name="description" content={description} />
+        {/* canonical: абсолютный URL без query — склейка дублей с похожих доменов */}
+        <link rel="canonical" href={`${EnvVars.URL}${router.asPath.split('?')[0].replace(/\/+$/, '')}/`} />
       </Head>
       <Wrapper>
         <HeaderContainer>
