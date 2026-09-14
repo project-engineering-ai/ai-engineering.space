@@ -22,7 +22,7 @@ export default function Page({ title, description, children }: PropsWithChildren
         </title>
         <meta name="description" content={description} />
         {/* canonical: абсолютный URL без query — склейка дублей с похожих доменов */}
-        <link rel="canonical" href={`${EnvVars.URL}${router.asPath.split('?')[0].replace(/\/+$/, '')}/`} />
+        <link rel="canonical" href={`${EnvVars.URL.replace(/\/+$/, '')}${router.asPath.split('?')[0].replace(/\/+$/, '')}/`} />
       </Head>
       <Wrapper>
         <HeaderContainer>
