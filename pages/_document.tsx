@@ -55,6 +55,12 @@ export default class MyDocument extends Document {
               <img src="https://mc.yandex.ru/watch/112548626" style={{ position: 'absolute', left: '-9999px' }} alt="" />
             </div>
           </noscript>
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `document.addEventListener("click",function(e){var a=e.target&&e.target.closest?e.target.closest('a[href^=\"mailto:\"],a[href^=\"tel:\"]'):null;if(a&&window.ym){try{ym(112548626,\"reachGoal\",\"contact_click\");}catch(_){}}},true);`,
+            }}
+          />
         </Head>
         <body className="next-light-theme">
           <Main />
