@@ -6,26 +6,26 @@ import Container from 'components/Container';
 import HeroIllustration from 'components/HeroIllustation';
 import OverTitle from 'components/OverTitle';
 import { media } from 'utils/media';
+import { lp, useLang, useT } from 'i18n';
 
 export default function Hero() {
+  const t = useT();
+  const lang = useLang();
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>данные для языковых моделей</CustomOverTitle>
-        <Heading>Качество модели начинается с данных</Heading>
-        <Description>
-          Мы — команда инженеров данных. Готовим документы и данные, на которых работают языковые модели: корпуса, датасеты,
-          структурирование под RAG и fine-tuning.
-        </Description>
+        <CustomOverTitle>{t.home.heroOverTitle}</CustomOverTitle>
+        <Heading>{t.home.heroHeading}</Heading>
+        <Description>{t.home.heroDescription}</Description>
         <CustomButtonGroup>
-          <NextLink href="/contact" passHref>
+          <NextLink href={lp(lang, '/contact')} passHref>
             <Button>
-              Обсудить проект <span>&rarr;</span>
+              {t.home.heroCtaPrimary} <span>&rarr;</span>
             </Button>
           </NextLink>
-          <NextLink href="/features" passHref>
+          <NextLink href={lp(lang, '/features')} passHref>
             <Button transparent>
-              Услуги <span>&rarr;</span>
+              {t.home.heroCtaSecondary} <span>&rarr;</span>
             </Button>
           </NextLink>
         </CustomButtonGroup>

@@ -1,0 +1,31 @@
+---
+title: 'How We Prepare Documents for LLMs'
+description: A practical look at preparing corpora and documents for language models
+date: '2026-09-10'
+tags: rag,llm,data
+imageUrl: '/posts/docs-pipeline.svg'
+---
+
+Language model quality starts long before the first prompt — with how the documents it runs on are prepared. Here are the main steps of our process.
+
+## 1. Corpus collection and cleaning
+
+We start by gathering the source documents and bringing them to a single form: text extraction from PDF/DOCX/HTML, removal of boilerplate junk (headers/footers, navigation, duplicates), normalization of encoding and markup.
+
+## 2. Structuring for RAG
+
+Next, documents are structured for retrieval-augmented generation:
+
+- **Chunking** — splitting into meaningful fragments, not a fixed number of tokens "blindly".
+- **Metadata** — source, section, date, document type: this is what retrieval is later filtered and ranked by.
+- **Retrieval verification** — a sample run of queries to make sure the needed fragments are actually found.
+
+## 3. Formats for fine-tuning
+
+If the data is being prepared for fine-tuning, we convert it to the target format (instruction/response, dialogs), validate examples for consistency and split the dataset into leak-free train/val/test.
+
+## 4. Quality control
+
+The final step is an audit: deduplication, completeness metrics, selective manual review. Only then does the data go to the client along with process documentation.
+
+Got a corpus that needs tidying up? Write to us: [info@ai-engineering.space](mailto:info@ai-engineering.space).

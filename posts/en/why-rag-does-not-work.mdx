@@ -1,0 +1,27 @@
+---
+title: 'Why RAG Does Not Work: Typical Data Problems'
+description: A breakdown of why retrieval-augmented generation returns junk answers — and how it is fixed at the data level
+date: '2026-09-10'
+tags: rag,llm,data
+imageUrl: '/posts/rag-problems.svg'
+---
+
+When a RAG system answers off-target, the cause is almost never the model — it is the data. Here are the four problems we encounter most often.
+
+## Bad chunking
+
+Splitting "500 tokens with overlap" breaks the document's logic: a table ends up across three chunks, and its heading in a fourth. The fix is structural chunking that respects document markup.
+
+## Missing metadata
+
+Without document source, type and date you can neither filter retrieval results nor tell the model what to trust. Metadata is half of retrieval quality.
+
+## Duplicates and junk in the corpus
+
+The same document in five copies does not make retrieval more accurate — it only clogs the index. Deduplication before indexing is mandatory.
+
+## No retrieval verification
+
+The index is built, but nobody checked that typical queries actually find the right fragments. Running a control set of queries is a mandatory step before launch.
+
+All of this is a data preparation problem, not a model architecture one. If your RAG is hallucinating, start with a corpus audit: [info@ai-engineering.space](mailto:info@ai-engineering.space).

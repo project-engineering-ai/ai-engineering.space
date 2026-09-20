@@ -9,12 +9,14 @@ import SectionTitle from 'components/SectionTitle';
 import { useResizeObserver } from 'hooks/useResizeObserver';
 import { SingleArticle } from 'types';
 import { media } from 'utils/media';
+import { useT } from 'i18n';
 
 interface ScrollableBlogPostsProps {
   posts: SingleArticle[];
 }
 
 export default function ScrollableBlogPosts({ posts }: ScrollableBlogPostsProps) {
+  const t = useT();
   const [hasMounted, setHasMounted] = useState(false);
   const { ref, width = 1 } = useResizeObserver<HTMLDivElement>();
 
@@ -29,8 +31,8 @@ export default function ScrollableBlogPosts({ posts }: ScrollableBlogPostsProps)
     <Section>
       <Container>
         <Content>
-          <OverTitle>блог</OverTitle>
-          <SectionTitle>Пишем про данные для LLM — RAG, корпуса, качество</SectionTitle>
+          <OverTitle>{t.blogSection.overTitle}</OverTitle>
+          <SectionTitle>{t.blogSection.title}</SectionTitle>
         </Content>
       </Container>
 

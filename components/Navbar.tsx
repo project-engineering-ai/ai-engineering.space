@@ -14,11 +14,11 @@ import Logo from './Logo';
 
 const ColorSwitcher = dynamic(() => import('../components/ColorSwitcher'), { ssr: false });
 
-type NavbarProps = { items: NavItems };
+type NavbarProps = { items: NavItems; lang?: 'ru' | 'en'; switchHref?: string };
 type ScrollingDirections = 'up' | 'down' | 'none';
 type NavbarContainerProps = { hidden: boolean; transparent: boolean };
 
-export default function Navbar({ items }: NavbarProps) {
+export default function Navbar({ items, lang = 'ru', switchHref = '/' }: NavbarProps) {
   const router = useRouter();
   const { toggle } = Drawer.useDrawer();
   const [scrollingDirection, setScrollingDirection] = useState<ScrollingDirections>('none');
@@ -76,6 +76,11 @@ export default function Navbar({ items }: NavbarProps) {
             <NavItem key={singleItem.href} {...singleItem} />
           ))}
         </NavItemList>
+        <LangSwitchWrapper>
+          <NextLink href={switchHref} passHref>
+            <a title={lang === 'ru' ? 'English version' : 'Русская версия'}>{lang === 'ru' ? 'EN' : 'RU'}</a>
+          </NextLink>
+        </LangSwitchWrapper>
         <ColorSwitcherContainer>
           <ColorSwitcher />
         </ColorSwitcherContainer>
@@ -124,6 +129,31 @@ const NavItemList = styled.div`
 const HamburgerMenuWrapper = styled.div`
   ${media('>=desktop')} {
     display: none;
+  }
+`;
+
+const LangSwitchWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+  & > a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+    border: 1px solid currentColor;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.6rem;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  ${media('<=phone')} {
+    margin-right: 0.75rem;
   }
 `;
 

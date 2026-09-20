@@ -2,30 +2,30 @@ import styled from 'styled-components';
 import Container from 'components/Container';
 import { EnvVars } from 'env';
 import { media } from 'utils/media';
+import { lp, useLang, useT } from 'i18n';
 
 type SingleFooterListItem = { title: string; href: string };
 type FooterListItems = SingleFooterListItem[];
 type SingleFooterList = { title: string; items: FooterListItems };
 type FooterItems = SingleFooterList[];
 
-const footerItems: FooterItems = [
-  {
-    title: 'Компания',
-    items: [
-      { title: 'Услуги', href: '/features' },
-    ],
-  },
-  {
-    title: 'Ресурсы',
-    items: [{ title: 'Блог', href: '/blog' }],
-  },
-  {
-    title: 'Контакты',
-    items: [{ title: EnvVars.EMAIL, href: 'mailto:' + EnvVars.EMAIL }],
-  },
-];
-
 export default function Footer() {
+  const t = useT();
+  const lang = useLang();
+  const footerItems: FooterItems = [
+    {
+      title: t.footer.company,
+      items: [{ title: t.footer.services, href: lp(lang, '/features') }],
+    },
+    {
+      title: t.footer.resources,
+      items: [{ title: t.footer.blog, href: lp(lang, '/blog') }],
+    },
+    {
+      title: t.footer.contacts,
+      items: [{ title: EnvVars.EMAIL, href: 'mailto:' + EnvVars.EMAIL }],
+    },
+  ];
   return (
     <FooterWrapper>
       <Container>

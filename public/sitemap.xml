@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ai-engineering.space/</loc><lastmod>2026-09-13</lastmod></url>
-  <url><loc>https://ai-engineering.space/contact</loc><lastmod>2026-09-13</lastmod></url>
-  <url><loc>https://ai-engineering.space/features</loc><lastmod>2026-09-13</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ai-engineering.space/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/en/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/features/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/features/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/features/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/en/features/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/features/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/features/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/blog/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/blog/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/en/blog/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/blog/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/contact/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/contact/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/en/contact/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/contact/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/blog/pochemu-rag-ne-rabotaet/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/blog/pochemu-rag-ne-rabotaet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/blog/why-rag-does-not-work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/blog/pochemu-rag-ne-rabotaet/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/blog/kak-my-gotovim-dokumenty-dlya-llm/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/blog/kak-my-gotovim-dokumenty-dlya-llm/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/blog/how-we-prepare-documents-for-llm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/blog/kak-my-gotovim-dokumenty-dlya-llm/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/en/blog/why-rag-does-not-work/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/blog/pochemu-rag-ne-rabotaet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/blog/why-rag-does-not-work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/blog/pochemu-rag-ne-rabotaet/"/>
+  </url>
+  <url>
+    <loc>https://ai-engineering.space/en/blog/how-we-prepare-documents-for-llm/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ai-engineering.space/blog/kak-my-gotovim-dokumenty-dlya-llm/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-engineering.space/en/blog/how-we-prepare-documents-for-llm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-engineering.space/blog/kak-my-gotovim-dokumenty-dlya-llm/"/>
+  </url>
 </urlset>

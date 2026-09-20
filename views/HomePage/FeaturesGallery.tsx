@@ -6,40 +6,22 @@ import OverTitle from 'components/OverTitle';
 import SectionTitle from 'components/SectionTitle';
 import ThreeLayersCircle from 'components/ThreeLayersCircle';
 import { media } from 'utils/media';
+import { useT } from 'i18n';
 
-const TABS = [
-  {
-    title: 'Корпуса и датасеты',
-    description:
-      '<p>Собираем текстовые корпуса из ваших источников и открытых данных, чистим от дублей и мусора, размечаем под задачу. На выходе — датасет, готовый к использованию.</p>',
-    imageUrl: '/posts/datasets.svg',
-    baseColor: '249,82,120',
-    secondColor: '221,9,57',
-  },
-  {
-    title: 'Документы под RAG',
-    description:
-      '<p>Структурируем документацию для retrieval-augmented generation: осмысленный чанкинг, метаданные, проверка того, что нужные фрагменты реально находятся по типовым запросам.</p>',
-    imageUrl: '/posts/rag-flow.svg',
-    baseColor: '57,148,224',
-    secondColor: '99,172,232',
-  },
-  {
-    title: 'Данные под fine-tuning',
-    description:
-      '<p>Готовим инструкционные и доменные датасеты для дообучения: форматы, шаблоны, валидация примеров, разбиение train/val/test без утечек.</p>',
-    imageUrl: '/posts/finetuning.svg',
-    baseColor: '88,193,132',
-    secondColor: '124,207,158',
-  },
+const IMAGE_URLS = ['/posts/datasets.svg', '/posts/rag-flow.svg', '/posts/finetuning.svg'];
+const COLORS = [
+  { baseColor: '249,82,120', secondColor: '221,9,57' },
+  { baseColor: '57,148,224', secondColor: '99,172,232' },
+  { baseColor: '88,193,132', secondColor: '124,207,158' },
 ];
 
 export default function FeaturesGallery() {
+  const t = useT();
+  const TABS = t.gallery.tabs.map((tab, idx) => ({ ...tab, ...COLORS[idx], imageUrl: IMAGE_URLS[idx] }));
   const [currentTab, setCurrentTab] = useState(TABS[0]);
 
   const imagesMarkup = TABS.map((singleTab, idx) => {
     const isActive = singleTab.title === currentTab.title;
-    const isFirst = idx === 0;
 
     return (
       <ImageContainer key={singleTab.title} isActive={isActive}>
@@ -75,8 +57,8 @@ export default function FeaturesGallery() {
   return (
     <FeaturesGalleryWrapper>
       <Content>
-        <OverTitle>форматы работы</OverTitle>
-        <SectionTitle>Что мы готовим для языковых моделей</SectionTitle>
+        <OverTitle>{t.gallery.overTitle}</OverTitle>
+        <SectionTitle>{t.gallery.title}</SectionTitle>
       </Content>
       <GalleryWrapper>
         <TabsContainer>{tabsMarkup}</TabsContainer>

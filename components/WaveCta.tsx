@@ -5,8 +5,11 @@ import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
 import SectionTitle from 'components/SectionTitle';
 import { media } from 'utils/media';
+import { lp, useLang, useT } from 'i18n';
 
 export default function WaveCta() {
+  const t = useT();
+  const lang = useLang();
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -18,16 +21,16 @@ export default function WaveCta() {
       </svg>
       <CtaWrapper>
         <Container>
-          <Title>Готовы обсудить задачу?</Title>
+          <Title>{t.wave.title}</Title>
           <CustomButtonGroup>
-            <NextLink href="/contact" passHref>
+            <NextLink href={lp(lang, '/contact')} passHref>
               <Button>
-                Написать нам <span>&rarr;</span>
+                {t.wave.primary} <span>&rarr;</span>
               </Button>
             </NextLink>
-            <NextLink href="/features" passHref>
+            <NextLink href={lp(lang, '/features')} passHref>
               <OutlinedButton transparent>
-                Услуги <span>&rarr;</span>
+                {t.wave.secondary} <span>&rarr;</span>
               </OutlinedButton>
             </NextLink>
           </CustomButtonGroup>

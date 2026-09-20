@@ -1,6 +1,7 @@
 import NextLink from 'next/link';
 import styled from 'styled-components';
 import { media } from 'utils/media';
+import { lp, useLang } from 'i18n';
 
 export interface ArticleCardProps {
   title: string;
@@ -10,8 +11,9 @@ export interface ArticleCardProps {
 }
 
 export default function ArticleCard({ title, slug, imageUrl, description }: ArticleCardProps) {
+  const lang = useLang();
   return (
-    <NextLink href={'/blog/' + slug} passHref>
+    <NextLink href={lp(lang, '/blog/') + slug} passHref>
       <ArticleCardWrapper className="article-card-wrapper">
         <HoverEffectContainer>
           <ImageContainer>

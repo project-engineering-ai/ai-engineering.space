@@ -7,27 +7,27 @@ import Container from 'components/Container';
 import OverTitle from 'components/OverTitle';
 import SectionTitle from 'components/SectionTitle';
 import { media } from 'utils/media';
+import { lp, useLang, useT } from 'i18n';
 
 export default function Cta() {
+  const t = useT();
+  const lang = useLang();
   return (
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>первый шаг</OverTitle>
-          <SectionTitle>Есть документы или данные, которые нужно подготовить для LLM?</SectionTitle>
-          <Description>
-            Расскажите, какие документы и данные у вас есть и для какой задачи они готовятся. Предложим план подготовки и оценим объём
-            работ.
-          </Description>
+          <OverTitle>{t.cta.overTitle}</OverTitle>
+          <SectionTitle>{t.cta.title}</SectionTitle>
+          <Description>{t.cta.description}</Description>
           <ButtonGroup>
-            <NextLink href="/contact" passHref>
+            <NextLink href={lp(lang, '/contact')} passHref>
               <Button>
-                Написать нам <span>&rarr;</span>
+                {t.cta.primary} <span>&rarr;</span>
               </Button>
             </NextLink>
-            <NextLink href="/features" passHref>
+            <NextLink href={lp(lang, '/features')} passHref>
               <OutlinedButton transparent>
-                Услуги <span>&rarr;</span>
+                {t.cta.secondary} <span>&rarr;</span>
               </OutlinedButton>
             </NextLink>
           </ButtonGroup>
