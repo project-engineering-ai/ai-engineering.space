@@ -78,7 +78,14 @@ export default function Navbar({ items, lang = 'ru', switchHref = '/' }: NavbarP
         </NavItemList>
         <LangSwitchWrapper>
           <NextLink href={switchHref} passHref>
-            <a title={lang === 'ru' ? 'English version' : 'Русская версия'}>{lang === 'ru' ? 'EN' : 'RU'}</a>
+            {/* data-lang-set: явный выбор пользователя запоминается и приоритетнее гео */}
+            <a
+              data-lang-switch="force"
+              data-lang-set={lang === 'ru' ? 'en' : 'ru'}
+              title={lang === 'ru' ? 'English version' : 'Русская версия'}
+            >
+              {lang === 'ru' ? 'EN' : 'RU'}
+            </a>
           </NextLink>
         </LangSwitchWrapper>
         <ColorSwitcherContainer>

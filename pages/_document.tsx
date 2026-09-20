@@ -33,6 +33,8 @@ export default class MyDocument extends Document {
       <Html lang="ru">
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+          {/* гео-локализация: RU для посетителей из России, EN для остальных */}
+          <script defer src="/geo-lang.js" />
           <script
             type="text/javascript"
             dangerouslySetInnerHTML={{
